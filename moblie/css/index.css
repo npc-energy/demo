@@ -1,0 +1,340 @@
+/* banner css */
+
+.banner {
+    background: url(../img/banner.jpg) no-repeat left top;
+    background-size: cover;
+    position: relative;
+    height: 120px;
+    margin-bottom: 1px;
+}
+
+/*  轮播图的内容  */
+
+.banner_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 轮播图的标题和内容  */
+
+.banner_title {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -100px;
+}
+
+.banner_title span {
+    font-size: 20px;
+    color: #111;
+    font-weight: bolder;
+}
+
+/* 轮播图的标题和内容 */
+
+.banner_logo {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background: url(../img/banner_logo.png) no-repeat;
+    background-size: 100%;
+}
+
+/*  轮播图的按钮 */
+
+.banner_btn {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    margin-left: -135px;
+}
+
+/*  轮播图的按钮超链接：打开大众点评 */
+
+.banner_btn a:nth-child(1) {
+    color: #f63;
+    margin-right: 15px;
+    height: 40px;
+    line-height: 40px;
+    width: 126px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #f63;
+}
+
+/*  轮播图的按钮超链接：下载APP享特价 */
+
+.banner_btn a:nth-child(2) {
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 126px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 2px;
+    border: 1px solid #f63;
+    background-color: #f63;
+}
+
+/* main */
+
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+/* 主体背景 */
+
+.main_inner {
+    float: left;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background: #fff;
+}
+
+.main_inner>ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.main_inner>ul li {
+    width: 20%;
+    border-radius: 22px;
+    margin: 13px 0 2px 0;
+}
+
+.main_inner>ul img {
+    width: 44px;
+    height: 44px;
+}
+
+.main_inner>ul p {
+    font-size: 13px;
+}
+
+.main_inner .circle {
+    margin: 10px 0px;
+    height: 10px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.circle li {
+    display: inline-block;
+    margin-right: 3px;
+    background-color: #ccc;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+}
+
+.circle li:nth-child(1) {
+    background-color: #f5734b;
+}
+
+/* discount */
+
+.discount {
+    margin: 10px 0;
+    background-color: #fff;
+    padding: 7px 6px 10px;
+    box-sizing: border-box;
+}
+
+.discount_logo {
+    display: inline-block;
+    height: 30px;
+    width: 75px;
+    background: url(../img/discount.png) no-repeat 0 -29px;
+    background-size: 200px;
+}
+
+.discount_title {
+    position: relative;
+}
+
+.discount_title>a>span {
+    font-size: 12px;
+    padding-right: 10px;
+    color: #bbb;
+    position: absolute;
+    right: 0%;
+    top: 24%;
+}
+
+.discount_title span i {
+    display: inline-block;
+    margin-top: -8px;
+    border: 2px solid #bbb;
+    transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
+    border-bottom: none;
+    border-left: none;
+}
+
+.discount_main {
+    display: flex;
+}
+
+.discount_img {
+    width: 33%;
+    border-radius: 3px;
+    padding: 0 4px;
+    display: block;
+    box-sizing: border-box
+}
+
+.discount_img img {
+    width: 100%;
+}
+
+.discount_img a p:nth-child(2) {
+    color: #333;
+    font-size: 14px;
+    padding-top: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.discount_img .iconfont {
+    font-size: 14px;
+}
+
+.discount_img a p:nth-child(3) span {
+    color: #f63;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.discount_img a p:nth-child(3) b {
+    color: #999;
+    font-size: 12px;
+    margin-left: 2px;
+    text-decoration: line-through;
+}
+
+/* bottom css */
+
+.bottom {
+    background: #fff;   
+}
+
+.bottom>p {
+    height: 30px;
+    line-height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #777;
+}
+.bottom>a{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+}
+.merchant{
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.merchant-flex {
+    padding: 11px 10px 11px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+}
+.merchant div:nth-child(1){
+    border-top: none;
+}
+
+.merchant-flex a {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.merchant .free {
+    font-size: 11px;
+    padding: 3px 7px;
+    background-color: #000;
+    color: #e5bf86;
+    position: absolute;
+    left: 8px;
+}
+
+.merchant img {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.merchant-main {
+    display: flex;
+    width: 60%;
+    flex: 1;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.merchant-main p {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111;
+    padding-right: 8px;
+    box-sizing: border-box;
+    max-width: 145px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.merchant-main>span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #777;
+    padding-top: 9px;
+    padding-bottom: 13px;
+}
+.merchant-main .flex span{
+    color: #f63;
+    font-size: 21px;
+    display: inline-block;
+    padding-right: 3px;
+}
+.merchant-main .flex b{
+    font-size: 13px;
+    color: #777;
+    text-decoration: line-through;
+    vertical-align: 1px;
+}
+.merchant-main .flex i{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 13px;
+    color: #777;
+    line-height: 24px;
+}

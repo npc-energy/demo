@@ -1,0 +1,349 @@
+/* header */
+
+header {
+    width: 100%;
+    height: 62px;
+    background-color: #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+header .inner {
+    width: 94%;
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+}
+
+/* logo */
+
+.logo {
+    overflow: hidden;
+    border-right: 1px solid #f7f7f7;
+    padding: 10px 0px 15px 0px;
+}
+
+.logo img {
+    display: block;
+    height: 36px;
+    margin: 0px 20px;
+}
+
+/* 导航 */
+
+.nav {
+    margin-left: 178.5px;
+    flex: 1;
+}
+
+.nav a {
+    font-size: 15px;
+    color: #666;
+}
+
+.nav>ul>li {
+    float: left;
+    margin-right: 30px;
+    line-height: 62px;
+    position: relative;
+}
+
+.nav b {
+    width: 0px;
+    height: 2px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/top_03.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transition: .3s ease-in-out;
+}
+
+.nav ul li:hover b {
+    width: 100%;
+    left: 0;
+}
+
+.nav ul li:nth-child(2):hover .product {
+    height: 372px;
+    transition: height 1s;
+}
+
+.nav ul li:nth-child(2) {
+    position: static;
+}
+.nav ul li:nth-child(2) a{
+    display: block;
+    position: relative;
+    top:1px;
+}
+.nav ul li:nth-child(4) {
+    position: static;
+}
+.nav ul li:nth-child(4) a{
+    display: block;
+    position: relative;
+    top:1px;
+}
+.nav ul li:nth-child(4) a:hover{
+   color: #0078f0;
+}
+.nav ul li:nth-child(4):hover .service {
+    height: 367px;
+    transition: height 1s;
+}
+/* 产品技术 */
+
+.product {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 62px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    height: 0px;
+    box-shadow: 0px 20px 20px rgba(23,25,46,0.11);
+
+}
+
+.prd-inner {
+    width: 100%;
+    overflow: hidden;
+    margin: 30px auto;
+    padding: 0px;
+    max-width: 1200px;
+}
+
+.product dl {
+    width: 22%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 4%;
+}
+
+.product dt {
+    margin: 0px;
+    padding: 0px;
+    line-height: 40px;
+    border-bottom: 1px solid #5d5d5d;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.product dt a ,.service-main dt a{
+    font-size: 18px;
+    color: #0078f0;
+}
+
+.product dd {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.product dd a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background: url(../img/top_05.png) 90% center no-repeat #f5f5f5;
+    background-size: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 5px 0px;
+    text-indent: 4%;
+}
+
+/* 支持与服务 */
+
+.service {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 62px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    height: 0px;
+    box-shadow: 0px 20px 20px rgba(23,25,46,0.11);
+}
+
+.service-img {
+    width: 26%;
+    overflow: hidden;
+    float: left;
+    padding: 20px;
+}
+.service-main{
+    overflow: hidden;
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+.service-main dl{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.service-main dt{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid #5d5d5d;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.service-main dd{
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    line-height: 26px;
+}
+
+/* 检索 */
+
+.search>ul {
+    height: 62px;
+}
+
+.search>ul>li {
+    float: left;
+    border-left: 1px solid #f7f7f7;
+    width: 62px;
+}
+.subnav_search{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    padding: 25px 0px;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 61px;
+    border-top: 1px solid #f7f7f7;
+    text-align: center;
+    box-shadow: 0px 10px 10px rgba(23,25,46,0.06);
+    display: none;
+}
+.subnav_search form{
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+    width: 40%;
+}
+.subnav_search form input:nth-child(1){
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+}
+.subnav_search form input:nth-child(2){
+    width: 19px;
+    height: 38px;
+    display: block;
+    overflow: hidden;
+    background: url(../img/top_04.jpg) center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    border: 0px;
+    cursor: pointer;
+}
+.subnav_search span{
+    width: 19px;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    background: url(../img/close.png) center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 2%;
+    top: 0px;
+    cursor: pointer;
+}
+.search>ul>li:nth-child(1) a {
+    width: 19px;
+    height: 62px;
+    overflow: hidden;
+    display: block;
+    background: url(../img/top_01.jpg) center no-repeat;
+    background-size: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+.search>ul>li:nth-child(1):hover .subnav_search{
+    display: block;
+}
+.search>ul>li:nth-child(2) {
+    padding: 0 20px;
+    height: 62px;
+    width: 75px;
+}
+.search>ul>li:nth-child(2) a {
+    float: left;
+    line-height: 62px;
+    font-size: 15px;
+    color: #666;
+}
+.search>ul>li:nth-child(3)>a {
+    display: inline-block;
+    font-size: 15px;
+    color: #666;
+    line-height: 62px;
+    background: url(../img/top_02.jpg) right center no-repeat;
+    padding: 0 10px;
+}
+.search>ul>li:nth-child(3){
+    position: relative;
+}
+.search>ul>li:nth-child(3):hover .En{
+    display: block;
+}
+/* 英文界面 */
+.En{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 61px;
+    background-color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    display: none;
+}
+.En a{
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    color: #666;
+}
+/* 底部 */
+footer{
+    overflow: visible;
+    background-color: #1a66ac;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+footer a{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #9abcdb;
+}
+footer span{
+    font-size: 14px;
+    color: #9abcdb;
+}

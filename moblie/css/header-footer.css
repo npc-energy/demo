@@ -1,0 +1,101 @@
+/* header css */
+header{
+    height: 50px;
+    overflow: hidden;
+}
+/*  头部固定定位  */
+header .inner {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f63;
+    color: #fff;
+    padding: 0 10px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+/* 头部所在城市定位的超链接  */
+header .city a {
+    position: relative;
+    padding-right: 17px;
+    color: #fff;
+    max-width: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+}
+/* 头部所在城市定位的下拉 */
+header .city i {
+    border: 1px solid #fff;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    margin-top: -8px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+/* 头部的检索 */
+header .search {
+    background-color: #fff;
+    flex: 1;
+    height: 30px;
+    margin: 10px 6px 10px 10px;
+    line-height: 28px;
+    text-align: left;
+    font-size: 13px;
+    border-radius: 25px;
+    position: relative;
+}
+header .search .iconfont{
+    font-size: 18px;
+    padding:0 5px 0 10px;
+    color:#888;
+}
+header .search a{
+    color: #b8b8b8;
+    font-size:13px;
+}
+/* 头部的登录 */
+header .login {
+    width: 28px;
+    height: 100%;
+}
+header .login a {
+    height: 50px;
+    width: 28px;
+    color: #fff;
+    position: relative;
+    top:-2px;
+    overflow: hidden;
+}
+/* footer */
+footer{
+    text-align: center;
+    padding: 15px 5px 10px;
+    font-weight: 400;
+    font-size: 12px;
+}
+footer a{
+    color: #adadad;
+    line-height: 28px;
+}
+footer span{
+    color: #8c8c8c;
+    padding: 0 6px;
+}
+.copyright{
+    color: #d1d1d1;
+    margin-top: 20px;
+    text-shadow: 0 1px 1px #fff;
+}
